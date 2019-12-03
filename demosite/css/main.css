@@ -2720,7 +2720,6 @@ html .NavBarLeft .NavBarElement0 {
 .NavBarBottom .search-button,
 .NavBarBottom .ep-uiInput,
 .Bottom.de_epages-remotesearchUiSuggest-box li {
-  font-family: Arial, Verdana, Helvetica;
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -3786,7 +3785,6 @@ td.InputLabellingSlim {
 
 .BoxSmallPadding,
 .Box {
-  margin: 0 0 10px 0 !important;
   padding: 3px 6px 6px 6px;
   border: 1px solid transparent;
   overflow:hidden;
@@ -6420,7 +6418,6 @@ ul.DropDownList {
 ul.DropDownList li,
 ul.ep-megamenu > li {
   display:inline-block;
-  margin:0;
 }
 ul.DropDownList li {
   position:relative;
@@ -8404,17 +8401,17 @@ html body .LinkProductRating.PaddingLeft20 {
 
   .ContextBox,
   .ContentArea {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
   }
 
   .HorizontalNavBar{
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
   }
 
   .ContextBoxHead,
@@ -8784,9 +8781,9 @@ html body .LinkProductRating.PaddingLeft20 {
 
 
 .img-text {
-  font-size: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, -50%);
 }

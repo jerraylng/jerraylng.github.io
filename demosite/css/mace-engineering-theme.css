@@ -10,14 +10,16 @@ html.IsEditor, body {
 }
 /* Typography */
 * {
-    font-family: "Montserrat", Arial, Helvetica ,sans-serif !important;
+    font-family: "Montserrat", Arial, Helvetica ,sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", Arial, Helvetica ,sans-serif !important;
+
+h1 {
+	font-family: "Alatsi", Arial, Helvetica , serif;
 }
-.ContentArea h1, .ContentArea h2, .ContentArea h3 {
-    font-family: "Montserrat",Arial,Helvetica,sans-serif;
+h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Arial, Helvetica ,sans-serif;
 }
+
 h2.blockHeading {
 	background-color: #ececec;
 	font-weight: 900;
@@ -183,6 +185,7 @@ hr.Separator {
 .NavBarTop .NavigationElement {
 	height: 58px;
 	line-height: 58px;
+	margin-left: 1.5em;
 }
 .NavBarTop p.BasketLink, .NavBarTop .NavigationElement > a, .NavBarTop .NavigationElement > em > a, .NavBarTop .NavigationElement.SSLSwitch input {
 	height: 58px;
@@ -220,10 +223,10 @@ hr.Separator {
 	padding: 0 16px 0 10px;
 }
 .SearchForm.vertical-search .SearchIcon, .SearchForm.horizontal-search .SearchIcon {
-	background: #ed1c24 url("/WebRoot/ecshared01/Shops/mace/MediaGallery/design/maceengineering-search-icon.jpg") no-repeat scroll 0 0 !important;
+	background: #ed1c24 url("../images/maceengineering-search-icon.jpg") no-repeat scroll 0 0 !important;
 	height: 37px;
 	width: 39px;
-	margin-top: 0;
+	margin-top: -1px;
 }
 /* NavBarLeft */
 .NavBarLeft .ContextBox {
