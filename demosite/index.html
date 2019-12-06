@@ -80,7 +80,7 @@
 
 
     <div class="Middle">
-      <a href="https://www.maceengineering.com.au/epages/shop.sf/en_AU/?ObjectPath=/Shops/mace/Categories/Performance_products/Air_Delivery/Air_Filters/Panel_Filters" class="float" style="text-decoration: none;">
+      <a href="https://www.maceengineering.com.au/epages/shop.sf/en_AU/?ObjectPath=/Shops/mace/Categories/Performance_products/Air_Delivery" class="float" style="text-decoration: none;">
         <span><h2 style="color:#fff;margin-top: 0.9em;font-size: 1.5rem;"><i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>&nbsp&nbspShop Now!</h2></span>
       </a>
       <!-- Slideshow container -->
@@ -89,7 +89,7 @@
         <!-- Full-width images with number and caption text -->
         
         <div class="slideshow fade">
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext">1 / 2</div>
           <div class="img-overlay"></div>
           <img src="https://www.maceengineering.com.au/WebRoot/ecshared01/Shops/mace/4E3C/D98C/CC81/33C8/8673/C0A8/D241/BA27/CAI_0020_VL_0020_6.JPG" alt="Holden Cold Air Intake">
           <div class="img-text"><h1 style="color:#fff;font-size: 5.5rem;font-family: 'Noto Sans KR', Montserrat, sans-serif">AIR DELIVERY SYSTEM</h1></div>
@@ -97,7 +97,7 @@
         </div>
         
         <div class="slideshow fade">
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext">2 / 2</div>
           <div class="img-overlay"></div>
           <img src="https://www.maceengineering.com.au/WebRoot/ecshared01/Shops/mace/4E3C/D8F2/3196/E5E3/47FE/C0A8/D241/BA6A/SL370704_VNV8-logo.png" alt="Holden Cold Air Intake Kit">
           <div class="img-text"><h1 style="color:#fff;font-size: 5.5rem;font-family: 'Noto Sans KR', Montserrat, sans-serif">AIR DELIVERY SYSTEM</h1></div>
@@ -110,8 +110,11 @@
 
         <!-- The dots/circles -->
         <div style="text-align:center;z-index:100;margin-top: -22px;position: absolute;left: 50%">
+          
           <span class="dot" onclick="currentSlide(1)"></span>
+          
           <span class="dot" onclick="currentSlide(2)"></span>
+          
         </div>
       </div>
 
@@ -132,7 +135,7 @@
               <div class="CategoryBaseTable TextComplete">
                 <div class="start-pageIntroText">
                   <h2 style="margin-bottom: 2%;font-weight: bold;"> The air delivery system your car needs</h2> <!-- temporary -->
-                  <p style="line-height: 1.8em;"> What your car needs is an efficient, minimal noise producing and well sought after air delivery system to help prevent dirt entering the body and to protect the engine. Mace engineering plans to deliver this accurate system to you as we know that a car’s engine should include the right mix of fuel and air to run properly. The product line includes but is not limited to air filters, cold air intake , throttle body products and insulators. This varied range is highly reliable and assures to fulfil the best quality requirements.  <a href="Air_Delivery/Air_Filters/Panel_Filters"><br/>Click here to browse our air delivery system.<a></p>
+                  <p style="line-height: 1.8em;"> What your car needs is an efficient, minimal noise producing and well sought after air delivery system to help prevent dirt entering the body and to protect the engine. Mace engineering plans to deliver this accurate system to you as we know that a car’s engine should include the right mix of fuel and air to run properly. The product line includes but is not limited to air filters, cold air intake , throttle body products and insulators. This varied range is highly reliable and assures to fulfil the best quality requirements.  <a href="https://www.maceengineering.com.au/epages/shop.sf/en_AU/?ObjectPath=/Shops/mace/Categories/Performance_products/Air_Delivery"><br/>Click here to browse our air delivery system.<a></p>
                   </div>
                   <div>
                     <h2 class="blockHeading"><span class="blackHeading">Products</h2>
@@ -294,6 +297,7 @@
             let slideIndex = 0;
             showSlides();
 
+
             function showSlides() {
               let i;
               let slides = document.getElementsByClassName("slideshow");
@@ -303,11 +307,15 @@
               slideIndex++;
               if (slideIndex > slides.length) {slideIndex = 1}
                 slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+              }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-</script>
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+        </script>
 </body>
