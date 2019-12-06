@@ -141,7 +141,7 @@ hr.Separator {
 .Header .ShopLogo {
     padding-top: 12px;
 }
-.Header .BasketBox.NavElementIcon {
+.Redbutton {
 	background: #ed1c24; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#cf0506, #650101); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#cf0506, #650101); /* For Opera 11.1 to 12.0 */
@@ -149,9 +149,8 @@ hr.Separator {
     background: linear-gradient(#cf0506, #650101); /* Standard syntax */
 	border-radius: 5px;
 	padding: 15px 20px;
-	position: absolute;
-	right: 0;
-	top: 75px;
+	font-size: 1.2em !important;
+	color: #fff !important;
 }
 .Header .BasketBox.NavElementIcon {
     font-size: 16px;
