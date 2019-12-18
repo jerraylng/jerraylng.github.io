@@ -218,7 +218,7 @@ input, select, textarea {
 
 		header > p {
 			display: block;
-			color: #f35858;
+			color: #fe9800;
 			padding: 0.75em 0 1em 0;
 			font-size: 1.5em;
 			line-height: 1.5em;
@@ -1769,7 +1769,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
 		}
 
 		.image.left {
@@ -2054,7 +2054,7 @@ input, select, textarea {
 		position: relative;
 		background: #fff;
 		overflow-x: hidden;
-		padding: 6em 0 6em 0;
+		padding: 3em 0 6em 0;
 	}
 
 	.image-wrapper {
@@ -2079,7 +2079,7 @@ input, select, textarea {
 
 	#header-wrapper {
 		position: relative;
-		padding: 4em 0 2em 0;
+		padding: 4em 0 0 0;
 		background-color: #fff;
 		background-size: 100% 620%;
 		background-size: 128px 128px, 100% 620%, auto;
@@ -2573,12 +2573,16 @@ input, select, textarea {
 
 			#nav {
 				font-size: 0.9em;
+				padding-top: 0.2em;
 			}
 
 				#nav > ul > li > span, #nav > ul > li > a {
 					padding: 0.25em 0.5em 0.25em 0.5em;
 				}
 				
+			.logo{
+				font-size: 80%;
+			}
 		/* Hero */
 
 			#hero h2 {
@@ -2700,6 +2704,11 @@ input, select, textarea {
 				display: none;
 			}
 
+			.logo {
+				font-size: 120%;
+				right: 0;
+				left: 0;
+			}
 		/* Footer */
 
 			#footer ul.divided {
@@ -3036,7 +3045,6 @@ input, select, textarea {
 	.logo{
 		position: absolute;
 		z-index: 10001;
-		height:100%;
 	}
 
 	.flex-wrapper{
