@@ -1795,7 +1795,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		padding-left: 1em;
+		padding-left: 8em;
 	}
 
 
@@ -1842,12 +1842,6 @@ input, select, textarea {
 			margin-top: 1.5em;
 			padding-left: 0;
 		}
-
-			ul.divided li:first-child {
-				padding-top: 0;
-				margin-top: 0;
-				border-top: 0;
-			}
 
 /* Icons */
 
@@ -2450,11 +2444,15 @@ input, select, textarea {
 		/* Header */
 
 			#nav {
-				position: relative;
+				position: absolute;
 				margin: 0.5em 0 0 0;
-				line-height: 2.25em;
-				height: 2.25em;
+				line-height: 3em;
+    			height: 3em;
 			}
+
+				#nav > ul > li > span, #nav > ul > li > a {
+					padding: 0.3em 0.75em 0.3em 0.75em;
+				}
 
 				#nav > ul > li {
 					margin-left: 0;
@@ -2761,16 +2759,16 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
-				left: 0;
+				right: 0;
+				padding-right: 1.5em;
 				position: fixed;
 				top: 0;
-				width: 100%;
 				z-index: 10001;
 				color: #263238;
 			}
 
 				#navButton .toggle {
+					padding-top: 0.6em;
 					text-decoration: none;
 					border: 0;
 					height: 100%;
@@ -2795,21 +2793,20 @@ input, select, textarea {
 					}
 
 					#navButton .toggle:before {
-						background: rgba(128, 132, 136, 0.35);
 						border-radius: 0 0 0.35em 0.35em;
 						border-top: 0;
-						color: #fff;
+						color: #feb63d;
 						content: '\f0c9';
 						display: block;
-						font-size: 18px;
-						height: 30px;
+						font-size: 1.8rem;
+						height: 50px;
 						left: 50%;
-						line-height: 30px;
+						line-height: 50px;
 						margin-left: -40px;
 						position: absolute;
 						text-align: center;
 						text-decoration: none;
-						width: 80px;
+						width: 50px;
 					}
 
 			#navPanel {
@@ -3037,6 +3034,8 @@ input, select, textarea {
 	}
 
 	.logo{
+		position: absolute;
+		z-index: 10001;
 		height:100%;
 	}
 
@@ -3116,3 +3115,17 @@ input, select, textarea {
 		#footer a:hover{
 			color: #feb63d;
 		}
+
+
+	@media screen and (max-width: 736px){
+		.icon { 
+			display:inline-block;
+		 }
+	}
+
+	@media screen and (max-width: 870px){
+		.nav-button { 
+			display:none !important;
+		 }
+	}
+
