@@ -144,7 +144,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #c68600;
+			color: #feb63d;
 		}
 
 	strong, b {
@@ -2015,7 +2015,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #c68600;
+			color: #feb63d;
 			border-color: rgba(198, 86, 00, 0.5);
 		}
 
@@ -2155,6 +2155,11 @@ input, select, textarea {
 					transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 				}
 
+				#nav > ul > li > span:hover, #nav > ul > li > a:hover {
+					color: #feb63d;
+				}
+
+
 				#nav > ul > li.active > span, #nav > ul > li.active > a {
 					
 					color: #feb63d;
@@ -2173,18 +2178,18 @@ input, select, textarea {
 		line-height: 2em;
 		border-radius: 0.35em;
 		min-width: 12em;
-		background: #fff;
+		background-color: #263238;
+		color: #cfd8dc;
 		line-height: 1em;
-		padding: 0.85em 0 0.85em 0;
+		padding: 0.2em 0 0.2em 0;
 		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-		margin-top: -0.8em;
 		list-style: none;
 	}
 
 		.dropotron a, .dropotron span {
 			display: block;
 			padding: 0.65em 1em 0.65em 1em;
-			border-top: solid 1px #e8e8e8;
+			border-top: solid 1px #455a64;
 			border-bottom: 0;
 		}
 
@@ -2202,7 +2207,7 @@ input, select, textarea {
 
 		.dropotron.level-0 {
 			font-size: 0.9em;
-			margin-top: 0;
+			margin-top: -0.1em;
 		}
 
 			.dropotron.level-0:before {
@@ -2260,13 +2265,13 @@ input, select, textarea {
 		#hero .button {
 			background: #feb63d;
 			border-color: rgba(255, 255, 255, 0);
-			color: #fff;
+			color: #27636B;
 			font-size: 1.25em;
 		}
 
 			#hero .button:hover {
 				border-color: #fff;
-				background-color: #c68600;
+				background-color: #fe9800;
 				color: #fff;
 			}
 
@@ -2300,7 +2305,7 @@ input, select, textarea {
 		}
 
 		#promo .button {
-			background: #fff;
+			background: #feb63d;
 			border-color: rgba(255, 255, 255, 0);
 			color: #27636B;
 			font-size: 1.25em;
@@ -2308,7 +2313,7 @@ input, select, textarea {
 
 			#promo .button:hover {
 				border-color: rgba(255, 255, 255, 0.75);
-				background-color: rgba(255, 255, 255, 0.15);
+				background-color: #fe9800;
 				color: #fff;
 			}
 
@@ -2575,7 +2580,7 @@ input, select, textarea {
 				#nav > ul > li > span, #nav > ul > li > a {
 					padding: 0.25em 0.5em 0.25em 0.5em;
 				}
-
+				
 		/* Hero */
 
 			#hero h2 {
@@ -2762,6 +2767,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
+				color: #263238;
 			}
 
 				#navButton .toggle {
@@ -3044,12 +3050,23 @@ input, select, textarea {
 	.nav-button{
 		background-color:#feb63d;
 		border-color:#fff;
-		border-radius: 0.5em;	
-		line-height: 250%;	
+		line-height: 250%;
+		color: #263238;	
+		border: solid 1px #263238;
+		border-radius: 0.5em;
 	}
 	.nav-button:hover{
-		background-color: #c68600;
-		border-color: #c68600;
+		background-color: #fe9800;
+		border-color: #fff;
+		color: #fff;
+		-moz-transition: background-color 0.25s ease-in-out;
+		-webkit-transition: background-color 0.25s ease-in-out;
+		-ms-transition: background-color 0.25s ease-in-out;
+		transition: background-color 0.25s ease-in-out;
+		-webkit-appearance: none;
+		border: solid 1px;
+		border-radius: 0.5em;
+		
 	}
 
 	#header{
@@ -3081,6 +3098,10 @@ input, select, textarea {
 		font-weight: bold;
 		font-size: 1.3rem;
 		color: #cfd8dc;
+		padding-bottom: 0.1em;
+	}
+	#footer h2:hover{
+			color: #feb63d;
 	}
 
 	#footer p{
@@ -3092,3 +3113,6 @@ input, select, textarea {
 		font-size: 1.05rem;
 		color: #cfd8dc;
 	}
+		#footer a:hover{
+			color: #feb63d;
+		}
