@@ -1192,6 +1192,8 @@ table tr td.ResetCell {
   overflow: hidden;
   border:0;
   padding: 0;
+  height: 4.2em;
+  background: #000;
 }
 
 .NavBarRoof .PropertyContainer {
@@ -1226,7 +1228,6 @@ table tr td.ResetCell {
   padding: 0px 0px 0px 0px;
   height: 186px;
   border: 0;
-  text-align: custom;
   color: white;
   font-size: 15px;
   /*
@@ -1258,7 +1259,6 @@ table tr td.ResetCell {
   padding-bottom: 0px;
   padding-left: 0px;
   margin:0;
-  text-align: custom;
   color: #8e8e8e;
   font-size:1px;
   
@@ -8782,11 +8782,12 @@ html body .LinkProductRating.PaddingLeft20 {
 .slideshow-container img{
   object-fit: cover;
   width:100%;
+  max-height: 30vh;
 }
 
 @media only screen and (min-width: 768px) {
   .slideshow-container img{
-   max-height: 20vh;
+   max-height: 30vh;
   }
 }
 
@@ -8896,14 +8897,33 @@ html body .LinkProductRating.PaddingLeft20 {
   bottom:40px;
   right:40px;
   background-color:#ed1c24;
-  color:#FFF;
+  color:#fff;
   border-radius:50px;
   text-align:center;
   box-shadow: .1em .2em .3em #650101;
   z-index: 99;
 }
 
+  .float h2{
+  color:#fff;
+  margin-top: 0.9em;
+  font-size: 1.5rem;
+  }
 
+  .float i{
+  font-size: 2rem;
+  }
+
+
+.NavBarRoofRight{
+    display:none;
+  }
+@media only screen and (min-width: 684px) {
+  .NavBarRoofRight{
+    display:block;
+  }
+
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -8911,7 +8931,7 @@ html body .LinkProductRating.PaddingLeft20 {
     height: 4.2em;
     background: #000;
   }
-
+   
 }
 
 @media only screen and (min-width: 1120px) {
@@ -8926,5 +8946,15 @@ html body .LinkProductRating.PaddingLeft20 {
   .NavBarRoof{
     height: auto;
     background: url("../images/maceengineering-navbarroof-bg.png") top left transparent;
+  }
+}
+
+.extra{
+   display: inline;
+  }
+
+@media only screen and (max-width: 993px) {
+  .extra{
+   display: none;
   }
 }

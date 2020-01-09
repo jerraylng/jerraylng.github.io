@@ -216,11 +216,19 @@ hr.Separator {
 	width: 302px;
 	padding: 4px 45px 4px 4px;
 }
+
+@media only screen and (max-width: 812px) {
+	.NavBarTop .InputField.SearchForm > button {
+		padding: 1px 16px 0 10px;
+	}
+}
+
 .NavBarTop .InputField.SearchForm > button {
 	margin: 0 0 0 -45px;
 	opacity: 1;
-	padding: 0 16px 0 10px;
+	padding: 2px 16px 0 10px;
 }
+
 .SearchForm.vertical-search .SearchIcon, .SearchForm.horizontal-search .SearchIcon {
 	background: #ed1c24 url("../images/maceengineering-search-icon.jpg") no-repeat scroll 0 0 !important;
 	height: 37px;
@@ -907,22 +915,9 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
     height: 410px;
 }
 }
-@media only screen and ( max-width: 812px ) {
-.Header .ShopLogo {
-    padding-top: 53px;
-}
-.Header .ShopLogo img {
-    width: 100%;
-	max-width: 350px;
-    height: auto;
-}
-.Header.HorizontalNavBar .custom-right {
-    position: absolute;
-}
-.NavBarTop {
-    margin: 0;
-}
-/* Search toggle */
+
+@media only screen and (max-width: 882px) {
+	/* Search toggle */
 .NavBarTop a#searchtoggl {
     position: absolute;
     right: 10px;
@@ -940,11 +935,12 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
     text-align: center;
     border-top: 2px solid #fff;
     height: 60px;
-    padding-top: 12px;
+    padding-top: 8px;
     margin-top: 0;
     background: #000000 none no-repeat 0 0;
 	border-bottom: 1px solid #ffffff;
 }
+
 .NavBarTop .InputField.SearchForm.horizontal-search {
     width: 95%;
 }
@@ -957,6 +953,24 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
 }
 .NavBarTop .InputField.SearchForm > button {
 	position: absolute;
+	padding: 1px 16px 0 10px;
+}
+}
+
+@media only screen and ( max-width: 812px ) {
+.Header .ShopLogo {
+    padding-top: 53px;
+}
+.Header .ShopLogo img {
+    width: 100%;
+	max-width: 350px;
+    height: auto;
+}
+.Header.HorizontalNavBar .custom-right {
+    position: absolute;
+}
+.NavBarTop {
+    margin: 0;
 }
 .Div .NavBarLeft {
     display: none;
@@ -1009,6 +1023,12 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
 		width: 32.55%;
 	}
 }
+@media only screen and ( max-width: 600px ) {
+	
+		.NavBarTop ul.DropDownList {
+		display: inline-block;
+	}
+}
 @media only screen and ( max-width: 760px ) {
 	.NavBarRoof .NavigationText {
 		font-size: 14px;
@@ -1039,9 +1059,6 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
 		width: 100%;
 	}
 	/* responsive menu */
-	.NavBarTop .PropertyContainer {
-		height: 70px;
-	}
 	.NavBarTop .SizeContainer {
 		height: 70px;
 	}
@@ -1065,9 +1082,6 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
 	.NavBarTop .NavigationElement.NavBarElement0 {
 		display: none !important;
 	}
-	.NavBarTop ul.DropDownList {
-		display: none !important;
-	}
 	.NavBarTop nav {
 		display: block;
 	}
@@ -1081,8 +1095,6 @@ table.Basket tr.AlternateRow td, table.ContentTable tr.Alternate td, .Alternate 
 	.NavBarTop .SearchElement.NavBarElement1 {
 		height: 70px;
 		padding-top: 7px;
-		border-top: none;
-		top: 71px;
 		z-index: 2147483640;
 	}
 	.NavBarTop .InputField.SearchForm.horizontal-search {
